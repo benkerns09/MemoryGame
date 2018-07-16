@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './MemoryGame.css';
 
-import MemoryCard from './MemoryCard.js';
+import MemoryCard from './MemoryCard';
 
 //attribute the nerd who wrote this
 function shuffle(a) {
@@ -96,11 +96,11 @@ render() {
   });
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="App-title">Memory Game</h1>
-        <p className="App-subtitle">Match Cards to win</p>
-      </header>
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title">Test Your Memory</h1>
+          <p className="App-subtitle">Match the symbold to win</p>
+        </header>
 
       <div>
         {cardsJSX.slice(0,4)}
@@ -115,7 +115,7 @@ render() {
         {cardsJSX.slice(12,16)}
       </div>
 
-      </div>
+    </div>
     );
   }
 }
